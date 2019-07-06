@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 2</title>
+<style media="screen" type="text/css">
+html, body {
+margin: 0;
+padding: 0;
+}
+.square {
+height: 400px;
+width: 500px;
+}
+
+.square__red {
+background-color: red;
+display: inline-block;
+}
+
+.position-relative {
+position: relative;
+}
+
+.square__yellow {
+  background-color: yellow;
+  height: 150px;
+  bottom: -125px;
+}
+
+.square__white {
+  background-color: white;
+  width: 40px;
+  bottom: 0px;
+  left: 110px;
+}
+
+.square__white-2 {
+  background-color: white;
+  height: 40px;
+  bottom: 220px;
+}
+
+.square__green {
+  background-color: green;
+  height: 133px;
+  width: 380px;
+  /* position: fixed; */
+  float: right;
+}
+
+.square__white-3 {
+  background-color: white;
+  height: 133px;
+  width: 380px;
+  /* position: fixed; */
+  float: right;
+}
+
+.square__white-4 {
+  background-color: white;
+  bottom: 0px;
+  border: 1px solid black;
+}
+
+.square__black {
+  background-color: black;
+  height: 133px;
+  width: 380px;
+  /* position: fixed; */
+  float: right;
+}
+
+.square__red-2 {
+  background-color: red;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+</style>
+</head>
+  <body>
+  <section class="square square__red">
+    <section class="position-relative square square__yellow"></section>
+  </section>
+  <section class="square square__red">
+    <section class="position-relative square square__white"></section>
+    <section class="position-relative square square__white-2"></section>
+  </section>
+  <section class="square square__red">
+    <section class="position-relative square square__green"></section>
+    <section class="position-relative square square__white-3"></section>
+    <section class="position-relative square square__black"></section>
+  </section>
+  <section class="square square__red">
+    <section class="position-relative square square__white-4">
+      <div class="square square__red-2"></div>
+    </section>
+  </section>
+  </body>
+</html>
